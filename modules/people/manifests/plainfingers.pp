@@ -1,0 +1,1 @@
+include people::plainfingers::applications

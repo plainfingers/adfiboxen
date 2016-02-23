@@ -65,3 +65,6 @@ github "xquartz",     "1.2.1"
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
+
+# chad stuff
+mod "chrome", "1.2.0", :github_tarball => "boxen/puppet-chrome"
