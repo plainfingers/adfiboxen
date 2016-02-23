@@ -1,1 +1,3 @@
-include people::plainfingers::applications
+class people::plainfingers {
+  incude chrome
+}
