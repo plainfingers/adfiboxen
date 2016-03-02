@@ -74,12 +74,28 @@ node default {
   ruby::version { '2.1.8': }
   ruby::version { '2.2.4': }
 
-  # common, useful packages
+  # Adfi add-ons
+  include chrome
+  include firefox
+  include iterm2::stable
+  #include tmux
+  #include ctags
+
+  # useful packages
   package {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'cmake',
+      'readline',
+      'coreutils',
+      'tree',
+      'tmux',
+      'ctags',
+      'vim',
+      'zsh',
+      'reattach-to-user-namespace'
     ]:
   }
 

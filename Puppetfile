@@ -58,6 +58,7 @@ github "stdlib",      "4.7.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 
+
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 # github "elasticsearch", "2.8.0"
@@ -65,3 +66,20 @@ github "xquartz",     "1.2.1"
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
+
+# Adfi add-ons
+#mod "libreoffice", "4.2.6", :github_tarball => "boxen/puppet-libreoffice"
+#mod "tmux", "1.0.2", :github_tarball => "boxen/puppet-tmux"
+#mod "ctags", "1.0.0", :github_tarball => "boxen/puppet-ctags"
+#mod "virtualbox", "1.0.13", :github_tarball => "boxen/puppet-virtualbox"
+#mod "osx", "2.8.0", :github_tarball => "boxen/puppet-osx"
+#mod "zsh", "1.0.0", :github_tarball  => "boxen/puppet-zsh"
+mod 'chrome', '1.2.0', :github_tarball => 'boxen/puppet-chrome'
+mod 'firefox', '1.2.3', :github_tarball => 'boxen/puppet-firefox'
+mod 'iterm2', '1.2.3', :github_tarball => 'boxen/puppet-iterm2'
+mod 'vagrant', '3.3.4', :github_tarball => 'boxen/puppet-vagrant'
+
+# Personal add-ons
+#mod "dropbox", "1.4.1", :github_tarball => "boxen/puppet-dropbox"
+mod "vim", "1.0.5", :github_tarball => "boxen/puppet-vim"
+
