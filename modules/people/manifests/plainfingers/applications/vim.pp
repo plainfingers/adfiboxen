@@ -4,15 +4,18 @@ class people::plainfingers::applications::vim {
 
   include vim
 
+  $home     = "/Users/${::luser}"
+  $dotfiles = "${home}/dotfiles"
+
   # TODO figure out how to get pathogen to install in a cleaner way
   # I thought puppet-vim would do it, but it isn't working
   exec { 'Setup pathogen dirs':
-    command => "mkdir -p /Users/chad/.vim/autoload /Users/chad/.vim/bundle",
-    creates => "/Users/chad/.vim/autoload"
-  }
+    command => "mkdir -p ${home}/.vim/autoload ${home}/.vim/bundle",
+    creates => "${home}/.vim/autoload"
+  }->
   exec { 'Download pathogen':
-    command => "curl -LSso /Users/chad/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim",
-    creates => "/Users/chad/.vim/autoload/pathogen.vim"
+    command => "curl -LSso ${home}/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim",
+    creates => "${home}/.vim/autoload/pathogen.vim"
   }
 
   # tpope favs
