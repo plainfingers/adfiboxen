@@ -65,8 +65,14 @@ class people::plainfingers::dotfiles {
 
   file { "/Users/${::boxen_user}/.zshenv":
     ensure  => link,
-    target  => "/Users/${::boxen_user}/.zprezto/runcomms/zshenv",
-    require => Repository["/Users/${::boxen_user}/.zprezto"]
+    target  => "/Users/${::boxen_user}/dotfiles/zshenv",
+    require => Repository["/Users/${::boxen_user}/dotfiles"]
+  }
+
+  file { "/Users/${::boxen_user}/.zprofile":
+    ensure  => link,
+    target  => "/Users/${::boxen_user}/dotfiles/zprofile",
+    require => Repository["/Users/${::boxen_user}/dotfiles"]
   }
 
   file { "/Users/${::boxen_user}/.zshrc":
