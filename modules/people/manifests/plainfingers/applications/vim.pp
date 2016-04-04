@@ -31,6 +31,7 @@ class people::plainfingers::applications::vim {
   vim::bundle { 'scrooloose/nerdtree': }
   vim::bundle { 'scrooloose/syntastic.git': }
   vim::bundle { 'scrooloose/nerdcommenter.git': }
+  vim::bundle { 'jgdavey/vim-blockle': }
 
   # maybe
   vim::bundle { 'Raimondi/delimitMate.git': }
